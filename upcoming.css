@@ -1,0 +1,251 @@
+body {
+    font-family: 'Lora', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/**********************
+    header section 
+***********************/
+header {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 3%;
+}
+
+.header-section {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-section:hover {
+    transform: scale(1.1);
+    transition: transform 2s ease-in;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.banner-text {
+    width: 50%;
+}
+
+.live-match {
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+.banner-image img {
+    height: 100%;
+}
+
+/******************** 
+    main section  
+*********************/
+.option {
+    background-color: black;
+    width: 15%;
+    border-radius: 5px;
+    height: 15%;
+}
+
+.button-1,
+.button-2,
+.button-3 {
+    color: black;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.button-1 {
+    background-color: orangered;
+    color: wheat;
+}
+
+.transfer {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.141);
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 70px;
+}
+
+.transfer img {
+    width: 40%;
+    padding: 18px;
+}
+
+.transfer-image {
+    display: flex;
+}
+
+.main-section {
+    display: flex;
+    padding-left: 6%;
+    padding-right: 3%;
+    padding-bottom: 60px;
+}
+
+.transfer-cart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 60px;
+}
+
+.option-extra {
+    visibility: hidden;
+    padding-left: 50px;
+}
+
+/***************** 
+    footer  
+******************/
+footer {
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.connecting {
+    display: flex;
+    padding-left: 25%;
+}
+
+.connect {
+    padding: 20px;
+    border-top: 1px solid gray;
+}
+
+.icon {
+    padding: 30px;
+}
+
+/*******************************
+     responsiveness for mobile  
+*********************************/
+@media screen and (max-width:688px) {
+    .header-section {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .live-match {
+        width: 50%;
+        margin-left: 20%;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .option {
+        background-color: white;
+        width: 100%;
+    }
+
+    .option-extra {
+        display: none;
+    }
+
+    .main-section {
+        display: block;
+    }
+
+    .transfer-cart {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .connecting {
+        display: block;
+        padding-left: 10px;
+    }
+
+    .connect {
+        border: none;
+        text-align: center;
+    }
+}
+
+/********************************
+     responsiveness for tablet 
+**********************************/
+@media screen and (min-width:689px) and (max-width:992px) {
+    .live-match {
+        width: 50%;
+    }
+
+    .banner-text {
+        padding-left: 20px;
+    }
+
+    .banner-image img {
+        width: 90%;
+    }
+
+    .option {
+        background-color: white;
+        width: 100%;
+        display: flex;
+    }
+
+    .main-section {
+        display: block;
+    }
+
+    .transfer-cart {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .option-extra {
+        display: none;
+    }
+
+    .tab {
+        display: none;
+    }
+
+    footer {
+        background-color: black;
+        text-align: center;
+        color: aliceblue;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .connecting {
+        display: flex;
+        padding-left: 10%;
+    }
+
+    .connect {
+        padding: 10px;
+        border-top: 1px solid gray;
+    }
+}
